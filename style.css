@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Didact+Gothic&family=Martel:wght@300&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Martel', serif;
+}
+
+.header{
+    background-image: url(./Group\ 2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    width: 1750px;
+    height: 130px;
+}
+
+.logo{
+    block-size: 90px;
+    margin-left: 210px;
+    margin-right: 300px;
+    margin-top: 35px;
+}
+.home{
+    height: 80px;
+    font-size: 40px;
+    margin-left: -30px;
+    margin-right: 100px;
+    margin-top: 35px;
+    transition: 0.5s;
+}
+.home:hover{
+    color: yellow;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.home a span{
+    color: gold;
+    list-style: none;
+    transition: 0.3s;
+}
+.home a span:hover{
+    color: yellow;
+    transition: 0.3s;
+}
+.home h1{
+    color: goldenrod;
+    font-size: 18px;
+    margin-top: -3px;
+    margin-left: -3px;
+}
+.about{
+    height: 80px;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 35px;
+    transition: 0.5s;
+}
+.about a span{
+    color: gold;
+    list-style: none;
+    margin-left: 10px; 
+    transition: 0.3s;
+}
+.about a span:hover{
+    color: yellow;
+    transition: 0.3s;
+}
+.about:hover{
+    color: yellow;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.about h1{
+    color: goldenrod;
+    font-size: 18px;
+    margin-left: -8px;
+    margin-top: -3px;
+}
+.contacts{
+    height: 80px;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 35px;
+    transition: 0.5s;
+}
+.contacts a span{
+    color: gold;
+    list-style: none;
+    margin-left: 10px; 
+    transition: 0.3s;   
+}
+.contacts a span:hover{
+    color: yellow;
+    transition: 0.3s;
+}
+.contacts:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.contacts h1{
+    color: goldenrod;
+    font-size: 18px;
+    margin-left: -10px;
+    margin-top: -3px;
+}
+.content-one{
+    background-image: url(./Group\ 2.png);
+    background-size: contain;
+    width: 1750px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+.hello{
+    border-radius: 50px;
+    width: 1350px;
+    height: 470px;
+    margin-top: 90px;
+    background: rgba(70, 77, 111, 0.192);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(73, 76, 104, 0.2);
+}
+.hello h4{
+    color: white;
+    margin-left: 100px;
+    font-size: 25px;
+    margin-top: 100px;
+}
+.hello h1{
+    color: white;
+    margin-left: 100px;
+    font-size: 50px;
+}
+.hello h1 span{
+    color: gold;
+}
+.hello h3{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+}
+.wave{
+    margin-top: -60px;
+    margin-left: 125px;
+    font-size: 35px;
+    color: gold;
+    -webkit-box-reflect: below -10px
+    linear-gradient(transparent, rgba(0,0,0,0,2));
+}
+.wave span{
+    font-weight: 600;
+    display: inline-block;
+    animation: wave-anim 1.8s infinite;
+    animation-delay: calc(0.1s*var(--item));
+}
+@keyframes wave-anim{
+    0%,
+    40%,
+    100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}
+.planet{
+   margin-left: 800px;
+   margin-top: -300px;
+   width: 300px;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.earth{
+    margin-top: -60px;
+    margin-left: -80px;
+    position: absolute;
+    top: calc(50%-100px);
+    left: calc(50%-100px);
+}
+.earth img{
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+}
+.moon-container{
+    position: absolute;
+    top: calc(30%-15px);
+    left: calc(30%-15px);
+}
+.moon{
+    animation: spin 10s linear infinite;
+    background: none;
+    height: 15px;
+    pointer-events: none;
+    transform-origin: 25px;
+    width: 15px;
+}
+.moon img{
+    height: 35px;
+    transform: translateY(-100px) translateX(-100px);
+    width: 35px;
+}
+.earth img,
+.moon img{
+    padding: 0em;
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200,);
+}
+.earth img,
+.moon img{
+    padding: 0em;
+    border-radius: 50%;
+    box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+
+
+.content-two{
+    background-image: url(./Group\ 2.png);
+    background-size: contain;
+    width: 1750px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+.aboutme{
+    border-radius: 50px;
+    width: 1350px;
+    height: 745px;
+    margin-top: -110px;
+    background: rgba(70, 77, 111, 0.192);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(73, 76, 104, 0.2);
+    /* display: flex; */
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.part{
+    display: flex;
+}
+.paris{
+    position: relative;
+    display: grid;
+    padding-left: center;
+    height: 500px;
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 80px;
+    border-radius: 20px;
+    background-size: cover;
+}
+.paris img{
+    width: 90%;
+    height: 90%;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+}
+.paris:before,
+.paris:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 110%;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px gold;
+    animation: clipMe 3s linear infinite;
+}
+.paris:before{
+    animation-delay: -1.5s;
+}
+@keyframes clipMe{
+    0%, 100% {clip: rect(0, 550px, 5px, 0);}
+    25% {clip: rect(0, 5px, 550px, 0);}
+    50% {clip: rect(540px, 550px, 550px, 0);}
+    75% {clip: rect(0, 550px, 550px, 540px);}
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.aboutme h1{
+    color: white;
+    margin-left: 70px;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-right: 70px;
+    font-weight: 300;
+}
+.ab{
+    margin-top: 140px;
+    margin-left: 400px;
+}
+.content-three{
+    background-image: url(./Group\ 2.png);
+    background-size: contain;
+    width: 1750px;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+}
+.skills{
+    border-radius: 50px;
+    width: 1350px;
+    height: 1000px;
+    background: rgba(70, 77, 111, 0.192);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(73, 76, 104, 0.2);
+    justify-content: center;
+    margin-left: -500px;
+    margin-top: 10px;
+}
+.skilltext{
+    display: flex;
+    margin-bottom: 90px;
+}
+.sk{
+    margin-top: 140px;
+    margin-left: 430px;
+    margin-bottom: 50px;
+}
+.digital h1{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.digital ul li{
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 60px;
+
+}
+.language{
+    margin-left: 100px;
+}
+.language h1{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.language ul li{
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 60px;
+}
+.softsk{
+    margin-left: 100px;
+}
+.softsk h1{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.softsk ul li{
+    color: white;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 60px;
+}
+.text{
+    position: absolute;
+    margin-top: 50px;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(-45deg, gold, gold,   black,  gold, gold);
+    background-size: 300%;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: -2px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 7s ease-in-out infinite;
+    -moz-animation: animated_text 5s ease-in-out infinite;
+    -webkit-animation: animated_text 5s ease-in-out infinite;
+}
+@keyframes animated_text{
+    0%{
+        background-position: 0px 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0px 50%;
+    }
+}
+.gallery{
+    margin-top:650px;
+    margin-left: -810px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 120s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: perspective(1200px)
+        rotateY(2880deg);
+    }
+}
+.gallery span{
+    margin-bottom: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg))
+    translateZ(380px);
+}
+.gallery span img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.content-four{
+    background-image: url(./Group\ 2.png);
+    background-size: contain;
+    width: 1750px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    margin-top: -295px;
+    border-radius: 50px;
+    width: 1350px;
+    height: 1000px;
+    background: rgba(70, 77, 111, 0.192);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(73, 76, 104, 0.2);
+    justify-content: center;
+}
+.wavecontact{
+    margin-top: 140px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+.container{
+    width: 500px;
+    position: relative;
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
+    flex-wrap:wrap;
+  }
+  .container .card{
+    position: relative;
+    border-radius: 50%;
+  }
+  .container .card .face{
+    width:70px;
+    height: 70px;
+    transition:.4s;
+    border-radius: 50% ; 
+  }
+  .container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  .container .card:hover .face.face1{
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px rgb(242, 255, 0),
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px rgb(217, 255, 0),
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;  
+  }
+  .container .card .face.face1 .content{
+    opacity: .2;
+    transition:  0.5s;
+    text-align: center; 
+  }
+  .container .card:hover .face.face1 .content{
+    opacity: 1;
+  }
+  .container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;   
+  }
+  .container .card .face.face1 .content h3{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+  .container .card .face.face1 .content a{
+     transition: .5s;
+  } 
+  .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  .container .card .face.face2 .content p, a{
+    margin: 0 ;
+    padding: 0;
+    color:#333;
+  } 
+  .container .card .face.face2 .content a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  } 
+  .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  .icons{
+    margin-top: 580px;
+    margin-left: 370px;
+  }
+  .login-box{
+    margin-top: -40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: #242026;
+    border-radius: 10px;
+    border: 1px solid #ecec7c;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    margin-left: 120px;
+  }
+.input-grup{
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+.input{
+    width: 370px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+}
+.input-label{
+    position: absolute;
+    top: 136px;
+    left: 50px;
+    color: rgb(125, 118, 118);
+    transform: translate(10px, 10px);
+    transition: transform 0.25s;
+}
+.input-label2{
+    position: absolute;
+    top: 205px;
+    left: 50px;
+    color: rgb(125, 118, 118);
+    transform: translate(10px, 10px);
+    transition: transform 0.25s;
+}
+.input-label3{
+    position: absolute;
+    top: 277px;
+    left: 50px;
+    color: rgb(125, 118, 118);
+    transform: translate(10px, 10px);
+    transition: transform 0.25s;
+}
+.input:focus+.input-label,
+.input:valid+.input-label{
+    transform: translate(10px, -14px) scale(0.8);
+    color: #d1c5fc;
+    padding-inline: 5px;
+    background-color: #242026;
+}
+.input:focus+.input-label2,
+.input:valid+.input-label2{
+    transform: translate(10px, -14px) scale(0.8);
+    color: #d1c5fc;
+    padding-inline: 5px;
+    background-color: #242026;
+}
+.input:focus+.input-label3,
+.input:valid+.input-label3{
+    transform: translate(10px, -14px) scale(0.8);
+    color: #d1c5fc;
+    padding-inline: 5px;
+    background-color: #242026;
+}
+.input:is(:focus, :valid){
+    outline-color: #d1c5fc ;
+}
+#send{
+    padding: 10px 20px;
+    color: #d9dbbd;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: 140px;
+}
+#send:hover{
+    animation: pulsate 2s ease-in-out;
+}
+@keyframes pulsate{
+    0%{
+        box-shadow: 0 0 15px #ecec7c, 0 0 30px #f0f;
+    }
+}
+.button-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.button-form a{
+    transition: 0.5s;
+}
+.button-form a:hover{
+    color: black;
+    transition: 0.5s;
+}
+.footer{
+    background-image: url(./Group\ 2.png);
+    background-size: contain;
+    width: 1750px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    margin-top: 90px;
+    border-radius: 50px;
+    width: 1350px;
+    height: 200px;
+    background: rgba(70, 77, 111, 0.192);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(73, 76, 104, 0.2);   
+}
+.infotext{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+.info h1{
+    color: gold;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.shadowbutton{
+    margin-top: 45px;
+    width: 130px;
+    height: 55px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-color: transparent;
+    color: gold;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 1s;
+}
+.shadowbutton:hover{
+    background-color: white;
+    color: black;
+    transition: 1s ease;
+    font-weight: 500;
+}
+.shadowbutton::before{
+    content:"";
+    color: white;
+    position: absolute;
+    background: transparent;
+    height: 70%;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(10px);
+    transition: 1s ease;
+}
+.shadowbutton:hover::before{
+    background: white;
+    top: 60px;
+}
+
+
